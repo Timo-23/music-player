@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">ARTISTS</a></li>
+            <li><a href="#">MUSIC</a></li>
+            <li><a href="#">HOME</a></li>S
+        </ul>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>MY <br> SOUNDS</h1>
+        </div>
+        <div class="right-col">
+            <p>CLICK HERE TO LISTEN</p>
+               <img src="play.png" id="icon">
+        </div>
+    </div>
+    <audio id="mysound">
+        <source src="cory.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mysound= document.getElementById("mysound");
+        var icon =document.getElementById("icon");
+        //creating a function that will change
+        //pause to play and vice versa
+        icon.onclick = function() {
+            if(mysound.paused ){
+                // if paused then play the music and change the image 
+                mysound.play();
+                icon.src="play.png";
+            }else {
+                // if playing then pause the music and change the image
+                mysound.pause();
+                icon.src ="pause.png";
+            }
+        }
+    </script>
+</body>
+</html>

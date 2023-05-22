@@ -1,0 +1,74 @@
+/*styling the body */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the background image by giving its url and position*/
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("img.jpeg");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+/* styling the list tags to the right of the navigation bar*/
+.nav li{
+    float: right;
+    list-style: none;
+}
+
+/* styling the anchor tags of the navigation bar*/
+.nav a{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 550;
+    display: block;
+    padding:  5px 35px;
+    color: white;
+    text-decoration: none;
+} 
+
+/*Giving postion and margin to the content-div*/
+.content{
+    width: 100%;
+    position: absolute;
+    top:45%;
+}
+/* styling the left-col by giving margin */
+.left-col{
+    margin-left: 11%;
+}
+
+/* styling the h1 in theleft-col */
+.left-col h1{
+    font-size: 50px;
+    color: crimson;
+}
+/*styling the right-col*/
+.right-col{
+    float: right;
+    margin-right:10% ;
+    margin-top: -5%;
+    display: flex;
+    align-items: center;
+}
+
+/* styling the text in the right-col*/
+.right-col p{
+    font-size:21px;
+    color: black;
+    font-weight: 650;
+    margin-right: 20px;
+}
+
+/* styling the cursor type of the icon to pointer*/
+#icon{
+    cursor: pointer;
+}
+
+
